@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    tools:context=".Article3"
+
+    >
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dp">
+        <ImageButton
+            android:id="@+id/profileButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/home"
+            android:onClick="toHomepage"
+            app:layout_constraintRight_toLeftOf="@id/profileButton"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="6 Fakta Seputar Flu Singapura yang Kerap Menyerang Bayi dan Balita. Para Ibu Muda Wajib Waspada"
+            app:layout_constraintTop_toBottomOf="@id/profileButton"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:background="@drawable/shadow_border"
+            />
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            app:layout_constraintLeft_toLeftOf="@id/title"
+
+            android:text="Raisa Angelin"
+            android:textSize="11sp"
+            />
+        <TextView
+            android:id="@+id/source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            app:layout_constraintTop_toBottomOf="@id/author"
+            app:layout_constraintLeft_toLeftOf="@id/title"
+            android:text="hipwee.com - 10/2018"
+            android:textSize="11sp"
+            />
+        <ImageView
+            android:id="@+id/title_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/article4"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/source"
+            />
+        <RelativeLayout
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shadow_border"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_image" >
+
+            <TextView
+
+                android:id="@+id/content_1"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="Menjadi orangtua memang nggak pernah mudah, terlebih saat menjadi orangtua newbie yang melakukan segala sesuatunya serba pertama kali dan minim bekal pengalaman. Rasanya bakal semakin diuji lagi saat si anak sakit. Wah, pasti rasanya bakal khawatir banget ‘kan?
+
+Beruntungnya kita hidup di era modern, para ibu dan ayah zaman now bisa dengan mudah mengakses informasi secara cepat saat dibutuhkan. Saat anak mendadak sakit, selain segera ditangani dan diperiksakan, kamu pun bisa mencari informasi seputar gejala penyakit yang dialami anak. Seperti mencari tahu gejala penyakit flu Singapura yang beberapa waktu belakangan kembali kembali merebak dan menyerang banyak anak. Sedihnya, flu ini paling rentan dialami anak-anak di bawah usia 10 tahun. Bahaya nggak sih? Simak lengkap ulasannya kali ini ya!
+
+1. Flu Singapura merupakan infeksi menular yang disebabkan oleh virus dan dikenal juga sebagai Penyakit Kaki, Tangan, dan Mulut (Hand-Foot-and-Mouth Disease)
+
+Flu Singapura sekilas dapat terlihat seperti penyakit campak karena memiliki gejala ruam merah yang mirip. Namun flu Singapura berbebeda dengan campak, meski sama-sama disebabkan oleh virus. Karena gejala ruamnya kerap terlihat di kaki, tangan dan mulut, makanya flu ini juga disebut sebagai Hand-Foot-and-Mouth Disease.
+
+2. Kondisi ini umumnya disebabkan oleh kelompok virus bernama enterovirus yang dapat tersebar melalui kontak langsung atau barang yang terkontaminasi
+
+Virus-virus dari keluarga enterovirus bisa menjadi penyebab flu Singapura. Salah satunya virus yang kerap menyerang adalah coxsackievirus A16. Dikutip dari Alodokter, virus tersebut hidup dalam cairan hidung dan tenggorokan, air ludah, tinja, serta cairan pada ruam kulit, dan sangat mudah ditularkan ke orang lain.
+
+3. Gejala flu Singapura biasanya mengalami bintil-bintil berair dan sariawan di dalam mulut, tangan, dan kaki. Terkadang luka-luka tersebut juga muncul di siku, bokong, lutut, dan lipatan paha
+
+Sekilas flu Singapura memiliki gejala yang mirip dengan campak, namun jika diperhatikan dengan seksama, ruamnya berbeda.  Gejala flu Singapura biasanya dimulai dengan demam, kemudian diikuti kemunculan sariawan dalam mulut, lalu muncul ruam pada tangan dan kaki. Masa inkubasi virus flu Singapura berlangsung selama 3-6 hari sebelum memunculkan gejala. Usia penderita juga umumnya adalah anak-anak yang berusia di bawah 10 tahun.
+
+4. Umumnya, flu Singapura tidak membutuhkan pengobatan. Kondisi ini kerap pulih dengan sendirinya setelah 7-10 hari dan tak butuh antibiotik
+
+Karena disebabkan oleh virus, flu Singapura sebenarnya nggak bisa dibasmi dengan penggunaan antibiotik. Langkah pertama yang dapat dilakukan para orangtua saat anaknya mengalami demam adalah memberikan parasetamol penurun demam dan membantu anak agar tetap makan asupan makanan yang bergizi dan banyak beristirahat agar dapat segera pulih. Memberikan sup atau bubur agar pada anak yang sedang susah menelan karena radang tenggorokan dan salep khusus pada ruamnya yang gatal dapat membantu mengurangi rasa tak nyaman pada anak.
+
+5. Flu ini cenderung nggak terlalu berbahaya, kecuali kalau terjadi komplikasi yang akibatnya bisa fatal
+
+Secara umum, flu Singapura nggak membahayakan jiwa. Namun jika terjadi komplikasi seperti dehidrasi, meningitis virus dan ensefalitis (peradangan pada jaringan otak), maka harus harus segera ditangani serius karena mengancam keselamatan sang anak. Oh ya, virus ini jarang menulari orang dewasa dan jika sudah tertular kemungkinan untuk tertular kembali relatif sangat kecil.
+
+6. Tindak pencegahan yang bisa kamu lakukan adalah menjaga kebersihan dan daya tahan tubuh agar tak mudah terserang virus ini
+
+Menjaga kebersihan dan daya tahan tubuh anak adalah cara-cara terbaik untuk mencegah tertular penyakit flu Singapura ini. Biasakan untuk selalu mencuci tanganmu dan anak setelah melakukan aktivitas di luar rumah atau melakukan kontak dengan orang lain. Kebersihan popok dan peralatan makan juga sangat penting agar anak terhindar dari virus ini. Jika terjangkit virus ini, sebaiknya anak beristirahat dulu di rumah sampai benar-benar sembuh agar nggak menulari anak lainnya.
+
+Nah, saat anak mengalami demam tinggi dan tiba-tiba muncul ruam, sebaiknya jangan panik dulu. Apalagi kalau tampak ruam di mulut,  area selangkangan dan bokong anak saat demam. Segera periksakan anak ke dokter spesialis anak agar mendapat diagnosis dan penanganan yang tepat.
+"
+
+                />
+
+        </RelativeLayout>
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

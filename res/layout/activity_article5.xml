@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    tools:context=".Article5"
+
+    >
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dp">
+        <ImageButton
+            android:id="@+id/profileButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/home"
+            android:onClick="toHomepage"
+            app:layout_constraintRight_toLeftOf="@id/profileButton"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="Berat Badan Anak Nggak Bertambah Sesuai Usia? Hati-Hati Bahaya Stunting"
+            app:layout_constraintTop_toBottomOf="@id/profileButton"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:background="@drawable/shadow_border"
+            />
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            app:layout_constraintLeft_toLeftOf="@id/title"
+
+            android:text="Raisa Angelin"
+            android:textSize="11sp"
+            />
+        <TextView
+            android:id="@+id/source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            app:layout_constraintTop_toBottomOf="@id/author"
+            app:layout_constraintLeft_toLeftOf="@id/title"
+            android:text="hipwee.com - 8/2018"
+            android:textSize="11sp"
+            />
+        <ImageView
+            android:id="@+id/title_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/article5"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/source"
+            />
+        <RelativeLayout
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shadow_border"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_image" >
+
+            <TextView
+
+                android:id="@+id/content_1"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="Siapa yang nggak mendambakan anak yang tumbuh sehat dan cerdas? Berbagai cara tentu rela para orangtua lakukan demi tumbuh kembang anak tercinta berjalan dengan baik dan normal. Salah satu yang biasa dilakukan orangtua adalah memperhatikan asupan nutrisi yang dikonsumsi si kecil, agar nggak sampai ada yang kurang.
+                
+Nah, apabila anak nggak mendapat asupan gizi yang memadai, besar kemungkinan anak dapat menjadi ‘stunting’ atau gagal tumbuh. Sayangnya nih, ternyata masih banyak orangtua di Indonesia yang belum sadar akan bahaya stunting yang rentan menyerang anak-anak yang masih dalam masa pertumbuhan. Padahal, menurut Badan Kesehatan Dunia, Indonesia berada di urutan ke-lima jumlah anak dengan kondisi stunting.
+
+Kondisi anak stunting atau gagal tumbuh sangat erat kaitannya dengan kecukupan gizi yang diterima anak sejak dalam kandungan
+"
+
+                />
+            <ImageView
+                android:id="@+id/content_img1"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                android:layout_below="@id/content_1"
+                android:src="@drawable/article5_1"/>
+
+            <TextView
+
+                android:id="@+id/content_2"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:layout_below="@id/content_img1"
+                android:text="Mungkin masih banyak orangtua yang belum begitu familiar dengan istilah stunting atau gagal tumbuh pada anak. Stunting adalah masalah gizi kronis yang disebabkan oleh asupan gizi yang kurang dalam waktu lama, umumnya karena asupan makan yang tidak sesuai kebutuhan gizi. Dilansir dari situs resmi IDAI (Ikatan Dokter Anak Indonesia), stunting adalah kondisi di mana anak nggak bertumbuh besar dan bertambah tinggi sesuai standar usianya sehingga anak cenderung berperawakan lebih kecil dan pendek (stunting) dari anak seusianya.
+
+Seorang anak dikatakan pendek  apabila tinggi badan atau panjang badan menurut usia melebihi batas dua standar deviasi di bawah median kurva standar pertumbuhan anak WHO. Kurangnya asupan nutrisi yang tepat pada anak di usia emas, yaitu 1000 Hari Pertama Kehidupan yaitu sejak awal kehamilan hingga anak berusia 2 tahun.
+
+Ada banyak faktor penyebab anak bisa menderita stunting. Salah satunya adalah anak kekurangan gizi kronis dalam waktu yang lama
+"
+
+                />
+
+            <ImageView
+                android:id="@+id/content_img2"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                android:layout_below="@id/content_2"
+                android:src="@drawable/article5_2"/>
+            <TextView
+
+                android:id="@+id/content_3"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:layout_below="@id/content_img2"
+                android:text=
+                    "Ada beberapa faktor yang menyebabkan anak stunting atau gagal tumbuh. Berikut sejumlah faktornya, dikutip dari kompas.com :
+
+•	Kekurangan gizi kronis dalam waktu lama
+
+•	Retardasi pertumbuhan intrauterine
+
+•	Nggak mendapat cukup protein dalam proporsi total asupan kalori
+
+•	Perubahan hormon yang dipicu oleh stres
+
+•	Sering menderita infeksi di awal kehidupan seorang anak
+
+Nah, kalau sudah tahu faktor penyebabnya, para orang tua bisa lebih waspada nih, biar anaknya nggak sampai menderita stunting.
+
+Sekilas gejala anak stunting nggak begitu terlihat, tapi mudah dipantau saat ibu rajin mengecek kurva pertumbuhannya
+"/>
+            <ImageView
+                android:id="@+id/content_img3"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                android:layout_below="@id/content_3"
+                android:src="@drawable/article5_3"/>
+            <TextView
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/content_img3"
+                android:padding="1dp"
+                android:text="Dilansir dari kompas.com, ada beberapa gejala yang dialami anak yang stunting atau gagal tumbuh. Gejala tersebut antara lain anak berbadan lebih pendek untuk anak seusianya, proporsi tubuh cenderung normal tetapi anak tampak lebih kecil untuk usianya, berat badan rendah untuk anak seusianya, dan pertumbuhan tulang tertunda. Nah, kalau sudah paham gejalanya maka para orangtua harus segera mengambil tindakan, biar nggak menyesal di kemudian hari karena kondisi ini nggak boleh dibiarkan berlanjut dan harus ditangani sebelum anak melewati usia emas.
+
+Kondisi stunting sebaiknya jangan disepelekan lho, Buibu! Pasalnya kondisi stunting akan berefek jangka panjang pada pertumbuhan dan perkembangannya kelak
+
+Meski sekilas saat ini nggak terlihat bahaya yang signifikan dari stunting, tapi efek jangka panjangnya jangan disepelekan lho, Buibu. Jika seorang anak menderita stunting, maka selain anak tersebut akan berperawakan lebih pendek dan kecil daripada anak seusianya, stunting juga dikaitkan dengan perkembangan otak yang nggak maksimal sehingga menyebabkan kemampuan mental dan belajar yang kurang, yang akan memengaruhi prestasinya di sekolah. Stunting dan kondisi lain terkait kurang gizi, juga dianggap sebagai salah satu faktor risiko diabetes, hipertensi, obesitas dan kematian akibat infeksi di kemudian hari. Duh, serem ya!
+
+Setelah memahami tentang stunting dan risikonya, penting nih untuk melakukan upaya pencegahan. Biar kamu nggak menyesal di kemudian hari
+
+Sebagai upaya pencegahan, sebaiknya sejak usia dini anak benar-benar dipantau kurva pertumbuhannya sehingga jika ada penurunan berat badan yang siginfikan penyebabnya bisa segera diatasi. Selain itu, penting juga untuk memberikan asupan makanan dengan gizi seimbang agar kebutuhan nutrisi anak dapat tercukupi. Jangan lupa untuk berkonsultasi dengan dokter spesialis anak agar bisa dicek apakah anak butuh tambahan vitamin, misalnya tambahan zat besi. Kalau tinggi dan berat anak per bulan nggak bertambah, segera cari bantuan dari dokter anak atau ahli gizi yang kompeten di bidangnya dan jangan dibiarkan berlarut-larut.
+
+Belakangan ini  pemerintah Indonesia memang sedang gencar mengkampanyekan tentang bahaya stunting pada anak di Indonesia. Ya, untuk mencetak generasi sehat dan cerdas, sepatutnya anak-anak Indonesia harus dijauhkan dari risiko stunting sejak dari awal kehamilan hingga anak berusia 2 tahun. Kalau kamu belum punya anak, jangan lupa sebarkan juga informasi ini ke orang-orang terdekat ya biar lebih banyak yang melek soal bahaya stunting ini.
+"
+                />
+
+
+        </RelativeLayout>
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

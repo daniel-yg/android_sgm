@@ -6,12 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EEEEEE"
-    tools:context=".BaseArticle"
-    android:paddingBottom="50dp"
+    tools:context=".Article2"
+
     >
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dp"
+        >
         <ImageButton
             android:id="@+id/profileButton"
             android:layout_width="50dp"
@@ -37,6 +39,7 @@
             android:background="@android:color/transparent"
             android:scaleType="centerCrop"
             android:src="@drawable/home"
+            android:onClick="toHomepage"
             app:layout_constraintRight_toLeftOf="@id/profileButton"
             app:layout_constraintTop_toTopOf="parent" />
         <TextView
@@ -45,7 +48,7 @@
             android:layout_height="wrap_content"
             android:padding="3dp"
             android:layout_marginTop="@dimen/activity_horizontal_margin"
-            android:text="3 Ide Sensory Play untuk Balita yang Mudah Dibuat. Bermain Bareng Buah Hati, Yuk!"
+            android:text="3 Stimulasi Motorik Agar Bayimu Bisa Berjalan Sebelum Usia 1 Tahun."
             app:layout_constraintTop_toBottomOf="@id/profileButton"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -69,14 +72,14 @@
             android:layout_marginLeft="6dp"
             app:layout_constraintTop_toBottomOf="@id/author"
             app:layout_constraintLeft_toLeftOf="@id/title"
-            android:text="hipwee.com - 7/25/2018"
+            android:text="hipwee.com - 6/2018"
             android:textSize="11sp"
             />
         <ImageView
             android:id="@+id/title_image"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/article1"
+            android:src="@drawable/article2"
             android:layout_marginTop="12dp"
             app:layout_constraintTop_toBottomOf="@id/source"
             />
@@ -95,18 +98,22 @@
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"
                 android:padding="3dp"
-                android:text="\t\t\tBagi seorang anak terutama bayi dan balita, bermain bukanlah sekadar soal bersenang-senang saja. Bermain juga jadi media pembelajaran seru untuk mengasah kemampuan motorik dan sensorik anak. Ada banyak jenis mainan anak yang marak ditawarkan di pasaran, tapi sayangnya kebanyakan mematok harga yang cukup bikin dompet meringis.\n
-\t\t\tTenang, sebagai ibu zaman now yang  kreatif dan banyak akal, kamu bisa kok mengkreasikan banyak permainan hasil karya daur ulang yang bisa kamu atau suami kreasikan di rumah.\n
-\t\t\t1. Buat sendiri kotak permainan sortir warna untuk anak dari kardus tak terpakai. Dengan sedikit kreativitas dan usaha, kamu bisa membuat permainan anak yang seru dan lucu~"
+                android:text=
+"Pada umumnya, bayi akan memulai proses berjalannya pada usia 4 sampai 15 bulan, dari belajar duduk hingga berdiri dan berjalan di sekeliling rumah. Dalam masa-masa yang mendebarkan ini, kamu bisa melakukan beberapa stimulasi untuk menaikkan rasa percaya diri anakmu melalui permainan sederhana dan ucapan pemberi semangat yang membangun.
+
+Dengan menerapkan tips-tips stimulasi ini, bukan tidak mungkin bayimu akan bisa berjalan lebih cepat dari usia 1 tahun lho.
+
+1.  Belajar duduk sendiri dengan posisi benar merupakan langkah awal dari fase belajar berjalan
+"
 
                 />
             <ImageView
                 android:id="@+id/content_img1"
-                android:layout_width="100dp"
+                android:layout_width="150dp"
                 android:layout_height="120dp"
                 android:layout_centerInParent="true"
                 android:layout_below="@id/content_1"
-                android:src="@drawable/article1_1"/>
+                android:src="@drawable/article2_1"/>
 
             <TextView
 
@@ -116,37 +123,22 @@
                 android:padding="3dp"
                 android:layout_below="@id/content_img1"
                 android:text="
-\t\t\tPermainan sortir warna yang sederhana ini akan melatih kemampuan dalam menalar tapi juga motorik anak karena tak hanya mengajak anak mengingat warna, namun tubuhnya juga aktif bergerak. Untuk membuatnya, kamu hanya membutuhkan beberapa alat sederhana saja kok.
+Usia : 4-7 bulan
 
-Bahan yang kamu butuhkan:
-1.	Kardus karton tak terpakai
-2.	Kertas karton putih
-3.	Spidol warna warni
-4.	Gunting dan lem
-5.	Bola warna warni
+Tips : Saat bayi mulai belajar duduk adalah fase pertamanya untuk mendapatkan kemampuan berpindah dari satu tempat ke tempat lain. Belajar duduk membantunya memperkuat otot-otot yang dia butuhkan untuk berdiri. Kamu bisa meningkatkan kemampuannya dengan bermain lempar (atau tepatnya menggelindingkan) bola untuk meningkatkan kekuatan ototnya.
 
-Cara membuat:
+2.  Belajar mengangkat tubuh dan merangkak menggapai hal-hal yang selama ini hanya bisa dia lihat"
 
-•	Potong kardus karton sesuai selera, bisa utuh atau setengah saja seperti gambar.
-
-•	Tempelkan kertas karton putih ke seluruh permukaan kardus. Jangan lupa buat pola dan lubangi beberapa bagian tempat memasukkan bola warna-warni ya!
-
-•	Setelah dilubangi, dekorasi kardus dengan spidol warna warni. Warnai pinggir setiap lubang dengan warna spesifik misal warna merah, kuning, hijau dan biru.
-
-•	Selesai! Jangan lupa contohkan pada anak cara bermainnya ya!
-
-
-2. Mirip dengan permainan sebelumnya, dengan karton tak terpakai kamu bisa mengajak anak mengasah kemampuan motorik halusnya dengan memberi makan ‘hiu’ kertas!"
 
                 />
 
             <ImageView
                 android:id="@+id/content_img2"
-                android:layout_width="100dp"
+                android:layout_width="150dp"
                 android:layout_height="120dp"
                 android:layout_centerInParent="true"
                 android:layout_below="@id/content_2"
-                android:src="@drawable/article1_2"/>
+                android:src="@drawable/article2_2"/>
             <TextView
 
                 android:id="@+id/content_3"
@@ -156,37 +148,20 @@ Cara membuat:
                 android:layout_below="@id/content_img2"
                 android:text=
                     "
-Yuk kreasikan ikan hiu karton untuk mengasah kemampuan mengenal huruf dan warna untuk anak balita! Cara membuatnya gampang kok~
+Usia : 7-10 bulan
 
-Bahan yang kamu butuhkan:
-1.	Kertas karton sisa kardus
-2.	Kertas putih dan origami warna warni
-3.	Spidol
-4.	Gunting dan lem
-5.	Lakban
+Tips : Hal terpenting yang bayi lakukan saat ia belajar merangkak adalah dia dapat melatih kemampuan tangan dan kakinya dalam waktu yang bersamaan. Si kecil butuh kemampuan ini untuk berlatih berjalan kelak. Yang bisa kamu lakukan untuk membantunya adalah menyemangatinya untuk merangkak dari satu sisi ruangan ke sisi lainnya. Jika ia berhasil, berikan pujian dan tepuk tangan yang meriah.
 
-Cara membuat:
-
-•	Buat pola ikan hiu di kertas karton kardus
-
-•	Gunting dan buat lubang berupa mulut di hiu karton. Tempelkan kertas putih yang sudah digunting menyerupai gigi hiu.
-
-•	Gunting kertas origami berbentuk ikan, tulis huruf A, B, C dan seterusnya di masing-masing kertas origami
-
-•	Tempelkan hiu karton di atas lantai dengan lakban sehingga dapat berdiri tegak
-
-•	Ajak anak bermain dan memasukkan ikan-ikan huruf ke dalam mulut hiu seolah sedang memberi makan si ikan~
-
-3.  Ajak anak mengenal bentuk melalui permainan murah meriah dan sederhana ini. Bahannya manfaatkan saja barang-barang nggak terpakai di rumah ya~
+3. Belajar berdiri dengan bantuan sesuatu untuk menopang tubuh
 
 "/>
             <ImageView
                 android:id="@+id/content_img3"
-                android:layout_width="100dp"
+                android:layout_width="150dp"
                 android:layout_height="120dp"
                 android:layout_centerInParent="true"
                 android:layout_below="@id/content_3"
-                android:src="@drawable/article1_3"/>
+                android:src="@drawable/article2_3"/>
 
             <TextView
                 android:id="@+id/content_4"
@@ -196,25 +171,9 @@ Cara membuat:
                 android:layout_below="@id/content_img3"
                 android:text=
                     "
-Nggak sulit kok mengajak anak bermain mengenal bentuk dengan bahan yang ramah lingkungan. Selain seru, kamu juga bisa bebas berkreasi sesuai imajinasi.
+Usia : 8 bulan
 
-Bahan-bahan yang kamu butuhkan:
-1.	Kertas karton
-2.	Kertas origami atau kertas mengilap warna warni
-3.	Lem kertas
-4.	Spidol
-5.	Gunting
-
-Cara membuat:
-
-•	Buat pola dan gunting bentuk-bentuk dasar yang dikenalkan ke anak, misalnya bentuk lingkaran, persegi empat, persegi panjang, dan segitiga
-
-•	Lapisi setiap pola yang sudah digunting dengan kertas origami bermotif, polos atau mengilap dengan warna berbeda
-
-•	Buat pola yang sama di sehelai kertas karton bekas kardus menggunakan spidol
-
-•	Sekarang kamu bisa bermain dengan anak, belajar mencocokan bentuk! Simpel ‘kan?
-
+Tips : Pada fase ini, bayimu mulai bertambah kuat dari sebelumnya dan mampu menarik dirinya berdiri dengan berpegangan pada furnitur atau pada orangtuanya. Kamu bisa membantunya menguasai teknik ini dengan menolongnya berdiri dan lalu mengajarinya turun kembali ke lantai dengan menekuk lututnya agar kelak dia bisa meminimalisir sakitnya jatuh saat dia mulai belajar berjalan.
 "/>
         </RelativeLayout>
 

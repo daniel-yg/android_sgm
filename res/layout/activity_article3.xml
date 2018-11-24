@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    tools:context=".Article3"
+
+    >
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dp">
+        <ImageButton
+            android:id="@+id/profileButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/home"
+            android:onClick="toHomepage"
+            app:layout_constraintRight_toLeftOf="@id/profileButton"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="5 Cara Sederhana Biar Anak Nggak Terlalu Kecanduan Youtube. Bu-ibu Yuk Pahami Dulu!"
+            app:layout_constraintTop_toBottomOf="@id/profileButton"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:background="@drawable/shadow_border"
+            />
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            app:layout_constraintLeft_toLeftOf="@id/title"
+
+            android:text="Raisa Angelin"
+            android:textSize="11sp"
+            />
+        <TextView
+            android:id="@+id/source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            app:layout_constraintTop_toBottomOf="@id/author"
+            app:layout_constraintLeft_toLeftOf="@id/title"
+            android:text="hipwee.com - 10/2018"
+            android:textSize="11sp"
+            />
+        <ImageView
+            android:id="@+id/title_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/article3"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/source"
+            />
+        <RelativeLayout
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shadow_border"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_image" >
+
+            <TextView
+
+                android:id="@+id/content_1"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="Youtube menjadi hiburan yang hampir menjadi kebiasan yang dilakukan oleh semua kalangan mulai dari anak kecil maupun orang dewasa.
+
+Karena semua orang dapat menonton youtube seharusnya para orang tua lebih sigap dalam memantau aktifitas anak mereka karena video-video di dalam youtube tidak semuanya positif ada beberapa video yang bertujuan negative bagi anak di bawah umur contohnya video yang menggunakan kata-kata kasar yang seharusnya tidak didengar oleh anak seusia di bawah 17 tahun dan lain sebagainya. Berikut tips untuk orang tua dalam memantau si kecil dalam menggunakan youtube
+
+1. Aktifkan fitur &quot;Mode terbatas&quot; atau &quot;Restricted Mode Fitering&quot; di Youtube
+
+Dalam aplikasi youtube terdapat fitur Mode terbatas atau Restricted mode fitering dengan demikian video-video dengan konten tidak pantas akan tersembunyikan.
+
+2. Memberi tahu mana tontonan yang baik buat anak
+
+Dengan cara ini orang tua dapat memberi tahu si kecil dalam penggunaan aplikasi tersebut mana tontonan yang layak di ihat dengan tontonan yang tidak layak di lihat oleh anak seusianya.
+
+3. Buat playlist yang cocok di usia mereka
+
+Pilihlah beberapa video yang cocok untuk tumbuh kembang si kecil contohnya seperti video tentang metode pembelajaran ataupun video tentang kartun yang dapat mengembangkan pengetahuan mereka.
+
+4. Subscribe beberapa Youtuber yang memprioritaskan anak-anak sebagai penonton mereka
+
+Dengan cara ini anak anak akan melihat beranda mereka dengan konten-konten anak saja. Contohnya animasi kartu maupun youtuber dengan konten-konten untuk anak kecil.
+
+5. Kurangi penggunaan handphone pada anak usia dibawah 12 tahun
+
+Cara ini adalah cara yang paling ampuh untuk menghindarkan anak kecil dengan video yang tidak baik untuk dirinya. Penggunaan handpone dapa di ganti dengan membebaskan anak bermain di luar dengan teman-teman mereka. Walau pun dijaman sekarang hampir semua orang tua membelikan anak mereka handphone di usia mereka yang masih sangat dini untuk mengenal apa fungsi dari aplikasi itu sendiri.
+
+Selain itu, tetap saja yang paling penting adalah bimbingan orangtua dalam mengontrol anak dalam menggunakan berbagai aplikasi yang tersebar luas di internet contohnya youtube karena terkadang juga sering muncul iklan yang tidak sesuai dengan umur mereka.
+"
+
+                />
+
+                    </RelativeLayout>
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

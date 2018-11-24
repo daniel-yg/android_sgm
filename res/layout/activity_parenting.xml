@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EEEEEE"
     tools:context=".Parenting">
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <ImageButton
         android:id="@+id/profileButton"
@@ -32,6 +35,7 @@
         android:background="@android:color/transparent"
         android:scaleType="centerCrop"
         android:src="@drawable/home"
+        android:onClick="toHomepage"
         app:layout_constraintRight_toLeftOf="@id/profileButton"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -89,10 +93,172 @@
             />
 
     </android.support.constraint.ConstraintLayout>
-    <ListView
+    <RelativeLayout
         android:id="@+id/search_results"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/top_bar"/>
+        app:layout_constraintTop_toBottomOf="@id/top_bar">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:id="@+id/article1">
+
+        <ImageButton
+            android:id="@+id/image_preview"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/border"
+            android:src="@drawable/article1"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:onClick="toArticle1"/>
+
+        <TextView
+            android:id="@+id/article1_title"
+            android:layout_width="297dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/border"
+            android:padding="10dp"
+            android:text="3 Ide Sensory Play untuk Balita yang Mudah Dibuat. Bermain Bareng Buah Hati, Yuk!"
+            android:textColor="@android:color/black" />
+
+    </RelativeLayout>
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:id="@+id/article2"
+            android:layout_below="@id/article1"
+            >
+
+            <ImageButton
+                android:id="@+id/image_preview2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/border"
+                android:src="@drawable/article2"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:onClick="toArticle2"/>
+
+            <TextView
+                android:id="@+id/article2_title"
+                android:layout_width="297dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/border"
+                android:padding="10dp"
+                android:text="3 Stimulasi Motorik Agar Bayimu Bisa Berjalan Sebelum Usia 1 Tahun."
+                android:textColor="@android:color/black" />
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:id="@+id/article3"
+            android:layout_below="@id/article2"
+            >
+            <ImageButton
+                android:id="@+id/image_preview3"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/border"
+                android:src="@drawable/article3"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:onClick="toArticle3"/>
+
+            <TextView
+                android:id="@+id/article3_title"
+                android:layout_width="297dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/border"
+                android:padding="10dp"
+                android:text="5 Cara Sederhana Biar Anak Nggak Terlalu Kecanduan Youtube. Bu-ibu Yuk Pahami Dulu!"
+                android:textColor="@android:color/black" />
+
+        </RelativeLayout>
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:id="@+id/article4"
+            android:layout_below="@id/article3"
+            >
+            <ImageButton
+                android:id="@+id/image_preview4"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/border"
+                android:src="@drawable/article4"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:onClick="toArticle4"/>
+
+            <TextView
+                android:id="@+id/article4_title"
+                android:layout_width="297dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/border"
+                android:padding="10dp"
+                android:text="6 Fakta Seputar Flu Singapura yang Kerap Menyerang Bayi dan Balita. Para Ibu Muda Wajib Waspada"
+                android:textColor="@android:color/black" />
+
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:id="@+id/article5"
+            android:layout_below="@id/article4"
+            >
+            <ImageButton
+                android:id="@+id/image_preview5"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/border"
+                android:src="@drawable/article5"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:onClick="toArticle5"/>
+
+            <TextView
+                android:id="@+id/article5_title"
+                android:layout_width="297dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/border"
+                android:padding="10dp"
+                android:text="Berat Badan Anak Nggak Bertambah Sesuai Usia? Hati-Hati Bahaya Stunting"
+                android:textColor="@android:color/black" />
+
+        </RelativeLayout>
+    </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>
+</ScrollView>
