@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/image_preview"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/border"
+        android:src="@drawable/article1" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="267dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/border"
+        android:padding="10dp"
+        android:text="Pendidikan Anak Usia Dini,
+Apa yang Harus Dicermati Orang Tua?"
+        android:textColor="@android:color/black" />
+
+
+
+
+</RelativeLayout>
