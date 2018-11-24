@@ -55,6 +55,7 @@
         android:id="@+id/password_text_box"
         android:layout_width="300dp"
         android:layout_height="36dp"
+        android:inputType="textPassword"
         app:layout_constraintTop_toBottomOf="@+id/prompt_password"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

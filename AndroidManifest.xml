@@ -25,7 +25,8 @@
         </activity>
         <activity android:name=".Homepage" />
         <activity android:name=".Parenting" />
-        <activity android:name=".BaseArticle"></activity>
+        <activity android:name=".BaseArticle" />
+        <activity android:name=".Article1"></activity>
     </application>
 
 </manifest>
