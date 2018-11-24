@@ -14,7 +14,7 @@ public class Homepage extends AppCompatActivity {
         setContentView(R.layout.activity_homepage);
     }
     public void toArticle(View view) {
-        Intent intent = new Intent(Homepage.this, Article.class);
+        Intent intent = new Intent(Homepage.this, Parenting.class);
         startActivity(intent);
     }
 }

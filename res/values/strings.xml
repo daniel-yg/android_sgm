@@ -16,11 +16,12 @@
     <string name="news">News!</string>
     <string name="news_title">Yuk! Cek Resep Ibu Sehat Untuk Resep Bunda Kreatif</string>
     <string name="parenting">Parenting</string>
+    <string name="parenting_desc">Berita terkait edukasi untuk buah hati</string>
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
     <string name="resepibusehat">Resep Ibu Sehat</string>
-
+    <string name="search_article">Ketik kata kunci artikel</string>
     <string name="separator">|</string>
     <string name="sgmstore">SGM Store</string>
     <string name="tanyaahli">Tanya Ahli</string>

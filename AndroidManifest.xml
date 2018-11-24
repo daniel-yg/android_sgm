@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Homepage" />
-        <activity android:name=".Article"/>
+        <activity android:name=".Parenting"/>
     </application>
 
 </manifest>
